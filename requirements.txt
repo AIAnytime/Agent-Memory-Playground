@@ -1,0 +1,10 @@
+openai 
+numpy 
+faiss-cpu 
+networkx 
+tiktoken
+python-dotenv
+streamlit 
+fastapi 
+uvicorn 
+pydantic
