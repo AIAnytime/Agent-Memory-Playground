@@ -1,15 +1,15 @@
 # AI Agent Memory Design & Optimization Playground
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellow.svg)](LICENSE)
 
 > **Interactive playground for testing and comparing 9 different AI agent memory optimization strategies**
 
 ![AI Agent Memory Playground](sct.png)
 
-## 🚀 Overview
+## Overview
 
 This project implements **9 different memory optimization techniques** for AI agents, providing a comprehensive solution for managing conversation history and context in production AI systems. Each strategy is implemented as a modular, plug-and-play class with a unified interface.
 
@@ -20,36 +20,36 @@ This project implements **9 different memory optimization techniques** for AI ag
 - **Scalability**: Handle long conversations efficiently
 - **Performance**: Optimize response times and memory usage
 
-## 🧠 Memory Strategies Implemented
+## Memory Strategies Implemented
 
-### 🟢 Basic Strategies
+### Basic Strategies
 1. **Sequential Memory** - Complete conversation history storage
 2. **Sliding Window Memory** - Fixed-size recent conversation window
 3. **Summarization Memory** - LLM-based conversation compression
 
-### 🟡 Advanced Strategies
+### Advanced Strategies
 4. **Retrieval Memory (RAG)** - Vector similarity search for semantic retrieval
 5. **Memory-Augmented Memory** - Persistent memory tokens with sliding window
 6. **Hierarchical Memory** - Multi-layered working + long-term memory
 
-### 🔴 Complex Strategies
+### Complex Strategies
 7. **Graph Memory** - Knowledge graph with entity relationships
 8. **Compression Memory** - Intelligent compression with importance scoring
 9. **OS-like Memory** - RAM/disk simulation with paging mechanisms
 
-## ✨ Features
+## Features
 
-- 🎯 **Modular Architecture** - Strategy pattern for easy swapping
-- 🔧 **Interactive Playground** - Streamlit web interface for testing
-- 📊 **Performance Analytics** - Token usage and response time tracking
-- 🔄 **Batch Comparison** - Test multiple strategies simultaneously
-- 🚀 **Production Ready** - FastAPI endpoints for deployment
-- 📈 **Real-time Metrics** - Memory statistics and performance monitoring
+- **Modular Architecture** - Strategy pattern for easy swapping
+- **Interactive Playground** - Streamlit web interface for testing
+- **Performance Analytics** - Token usage and response time tracking
+- **Batch Comparison** - Test multiple strategies simultaneously
+- **Production Ready** - FastAPI endpoints for deployment
+- **Real-time Metrics** - Memory statistics and performance monitoring
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.10+
 - OpenAI API Key
 
 ### Setup
@@ -71,7 +71,7 @@ pip install -r requirements.txt
 echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
 ```
 
-## 🎮 Quick Start
+## Quick Start
 
 ### 1. Interactive Playground (Streamlit)
 ```bash
@@ -95,7 +95,7 @@ python example_usage.py
 - Interactive CLI for testing all memory strategies
 - Detailed memory statistics and performance metrics
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Basic Usage
 ```python
@@ -152,7 +152,7 @@ curl -X POST "http://localhost:8000/sessions/{session_id}/chat" \
   }'
 ```
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 | Strategy | Token Efficiency | Retrieval Speed | Memory Usage | Best For |
 |----------|------------------|-----------------|--------------|----------|
@@ -162,7 +162,7 @@ curl -X POST "http://localhost:8000/sessions/{session_id}/chat" \
 | Hierarchical | ✅ Very High | 🔍 Fast | 📊 Medium | Complex applications |
 | Graph Memory | 🔍 Medium | 🐌 Slow | 📈 High | Knowledge systems |
 
-## 🏗️ Architecture
+## Architecture
 
 ### Strategy Pattern Design
 ```
@@ -184,7 +184,7 @@ AIAgent
 - **API Layer**: FastAPI endpoints for production use
 - **Playground**: Streamlit interface for testing
 
-## 📈 Monitoring & Metrics
+## Monitoring & Metrics
 
 Track essential performance metrics:
 
@@ -198,7 +198,7 @@ Track essential performance metrics:
 }
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Memory Strategy Parameters
 
@@ -220,7 +220,7 @@ HierarchicalMemory(
 )
 ```
 
-## 🚀 Production Deployment
+## Production Deployment
 
 ### Docker Deployment
 ```dockerfile
@@ -243,7 +243,7 @@ OPENAI_MODEL=gpt-4o-mini
 EMBEDDING_MODEL=text-embedding-3-small
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 ```bash
@@ -255,14 +255,14 @@ Run performance benchmarks:
 python benchmark.py
 ```
 
-## 📚 Documentation
+## Documentation
 
 - **[Technical Guide](AI_Agent_Memory_Documentation.md)** - Comprehensive implementation details
 - **[API Documentation](http://localhost:8000/docs)** - FastAPI interactive docs
 - **[Strategy Comparison](docs/strategy-comparison.md)** - Performance analysis
 - **[Production Guide](docs/production-guide.md)** - Deployment best practices
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -272,18 +272,18 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **OpenAI** for providing the GPT models and embeddings
 - **Streamlit** for the amazing web framework
 - **FastAPI** for the high-performance API framework
 - **FAISS** for efficient vector similarity search
 
-## 📞 Support & Contact
+## Support & Contact
 
 - **Website**: [aianytime.net](https://aianytime.net)
 - **Creator Portfolio**: [sonukumar.site](https://sonukumar.site)
@@ -294,15 +294,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
   <p>Built with ❤️ by <strong>AI Anytime</strong></p>
-  <p>⭐ Star this repo if you find it helpful!</p>
+  <p>Star this repo if you find it helpful!</p>
 </div>
-
-## 🔗 Related Projects
-
-- [LangChain Memory](https://github.com/langchain-ai/langchain) - Memory components for LangChain
-- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Microsoft's AI orchestration SDK
-- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) - Autonomous AI agent framework
-
----
-
-**Keywords**: AI Agents, Memory Optimization, RAG, Vector Search, LLM, Conversation Management, Token Optimization, Production AI
